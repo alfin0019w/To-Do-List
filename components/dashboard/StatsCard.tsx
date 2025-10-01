@@ -2,11 +2,12 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Video as LucideIcon } from 'lucide-react';
+import React from 'react';
 
 interface StatsCardProps {
   title: string;
   value: number;
-  icon: LucideIcon;
+  icon: React.ComponentType<{ className?: string }>;
   description?: string;
   color?: string;
 }
